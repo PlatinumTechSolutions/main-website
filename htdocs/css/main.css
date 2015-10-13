@@ -1,0 +1,117 @@
+
+#navbar { border-bottom: 3px solid #2980b9; }
+#navbar .brand {
+    width: 60px;
+    height: 30px;
+    display: inline-block;
+    background: url('/images/logo.png') 0 50%;
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+#navbar .navbar-inner { background: #FFF; }
+#navbar .brand span { display: none; }
+#navbar .nav { padding: 5px; }
+
+#welcome-content, #skills-content, #experience-content, #contact-content {
+    background: #222;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    color: #FFF;
+    background: #333;
+}
+#welcome-content {
+    padding: 60px 0 0 0;
+}
+#skills-content, #experience-content {
+    padding: 40px 0;
+}
+#banner1, #banner2, #banner3 {
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    height: 400px;
+    background: url(/images/banner.jpg) 50% 0 fixed;
+}
+#footer {
+    padding: 20px;
+    color: #FFF;
+    background: #000;
+}
+
+.welcome {
+    padding: 0 0 20px 0;
+    color: #FFF;
+}
+
+#skills-content strong { color: #2980b9; }
+
+.copyright { text-align: center; padding: 10px; }
+
+.experience .role, .contact-form {
+    border: 1px solid #555;
+    border-radius: 6px;
+    background: #555;
+    padding: 0 10px;
+    margin: 10px;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 16px;
+    padding: 4px;
+    height: auto;
+}
+
+.contact-form textarea { height: 260px; }
+
+.contact-form p { font-size: 16px; padding: 2px 0; }
+
+.contact-form .required {
+    color: red;
+    padding: 0 10px;
+}
+
+.contact-form .submit input { margin-bottom: 20px; float:right; }
+
+.thank-you, .form-errors {
+    border: 1px solid #555;
+    border-radius: 6px;
+    padding: 0 10px;
+    margin: 10px;
+}
+
+.thank-you { color: #0A0; background: #EFE; }
+.form-errors { color: #F00; background: #FCC; }
+
+.form-errors h3 { margin: 2px; }
+
+a, a:hover, .experience .role .links { color: #3498db; text-decoration: none; }
+
+a:hover { color: #e74c3c; }
+
+ul.social, ul.links { margin: 10px 0; padding: 0; }
+ul.social li, ul.links li { list-style: none; padding: 0; margin: 0; }
+
+ul.links li { display:inline; margin-right: 10px; }
+
+.skills { border: 0; padding: 0; margin: 3px 0; font-weight: bold; }
+.skills li {
+    list-style: none;
+    padding: 2px;
+    border-radius: 3px;
+    background: #3498db;
+    color: #222;
+    margin: 2px 0 2px 0;
+    display:inline-block;
+}
+
+.bio .avatar { float: left; padding: 2px 8px 8px 0; }
+.bio .avatar img { border-radius: 6px; border: 1px solid #FFF; }
+

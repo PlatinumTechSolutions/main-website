@@ -1,0 +1,24 @@
+
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span7 bio">
+                <div class="avatar">
+                    <img src="/images/avatar.jpg" width="80" height="80" />
+                </div>
+                <p>A passionate and skilled developer, Carl uses over 10 years commercial experience in 
+                various backend technologies to produce robust systems for any situation. With a passion
+                for quality and keen eye for detail, he takes pride in all projects he has contributed to.</p>
+            </div>
+            <div class="span1"></div>
+            <div class="span4">
+                <ul class="social">
+                    <li><a href="https://www.linkedin.com/in/carlcasbolt"><i class="fa fa-linkedin"></i> @CarlCasbolt on LinkedIn</a></li>
+                    <li><a href="https://github.com/carlcasbolt"><i class="fa fa-github"></i> @CarlCasbolt on GitHub</a></li>
+                    <li><a href="https://twitter.com/carlcasbolt"><i class="fa fa-twitter"></i> @CarlCasbolt on twitter</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">&copy; 2015, Platinum Tech Solutions</div>
+    </div>
+
