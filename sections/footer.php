@@ -15,7 +15,7 @@
                     <li><a href="https://www.linkedin.com/in/carlcasbolt"><i class="fa fa-linkedin"></i> @CarlCasbolt on LinkedIn</a></li>
                     <li><a href="https://github.com/carlcasbolt"><i class="fa fa-github"></i> @CarlCasbolt on GitHub</a></li>
                     <li><a href="https://twitter.com/carlcasbolt"><i class="fa fa-twitter"></i> @CarlCasbolt on twitter</a></li>
-                    <li><a href="=4407905323168"><i class="fa fa-phone"></i> call me +44 (0) 7905 323 168</a></li>
+                    <li><a href="tel:+447905323168"><i class="fa fa-phone"></i> call me +44 (0) 7905 323 168</a></li>
                     <li><a href="mailto://hello@platinumtechsolutions.co.uk"><i class="fa fa-envelope"></i> hello@platinumtechsolutions.co.uk</a></li>
                 </ul>
             </div>
