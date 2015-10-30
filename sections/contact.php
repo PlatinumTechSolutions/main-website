@@ -84,22 +84,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <h3>About You</h3>
                 <p>
                     Your name<span class="required">*</span><br />
-                    <input type="text" name="name" value="" class="" placeholder="eg. Carl Casbolt" />
+                    <input type="text" name="name" value="" class="" />
                 </p>
 
                 <p>
                     Email address<span class="required">*</span><br />
-                    <input type="email" name="email" value="" placeholder="eg. hello@platinumtechsolutions.co.uk">
+                    <input type="email" name="email" value="" />
                 </p>
 
                 <p>
                     Telephone number or Skype username<br/>
-                    <input type="text" name="phone" value="" placeholder="eg. +44 (0)1234 5678900">
+                    <input type="text" name="phone" value="" />
                 </p>
 
                 <p>
                     Your website<br/>
-                    <input type="text" name="website" value="" placeholder="eg. platinumtechsolutions.co.uk">
+                    <input type="text" name="website" value="" />
                 </p>
             </div>
             <div class="span6">
