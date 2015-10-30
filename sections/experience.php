@@ -4,8 +4,8 @@
             <h2>Experience <small>Companies I've worked with over the years</small></h2>
         </div>
 
-        <div class="row-fluid experience">
-            <div class="span6 role">
+        <div class="experience">
+            <div class="role">
                 <h2>Rightster</h2>
                 <h3><small>July 2013 - November 2015</small></h3>
                 <ul class="skills">
@@ -37,10 +37,10 @@
                 <ul class="links">
                     <li><a target="_blank" href="https://my.rightster.com/">my rightster</a></li>
                 </ul>
-
             </div>
-
-            <div class="span6 role">
+          </div>
+          <div class="experience">
+            <div class="role">
                 <h2>Time Inc. UK <small>(formally IPC Media)</small></h2>
                 <h3><small>April 2008 - June 2013</small></h3>
                 <ul class="skills">
@@ -75,12 +75,9 @@
                     <li><a target="_blank" href="http://www.womanandhome.com/">womanandhome</a></li>
                 </ul>
             </div>
-
         </div>
-
-        <div class="row-fluid experience">
-
-            <div class="span6 role">
+        <div class="experience">
+            <div class="role">
                 <h2>Sony PlayStation</h2>
                 <h3><small>July 2005 - April 2008</small></h3>
                 <ul class="skills">
@@ -98,7 +95,7 @@
 
                 <p>Helped to build and improve the PlayStation Developer Network (SceDev) which allows
                 game developers to download tools and software to developer games on several PlayStation
-                titles including the PSP and PS3 formats. The system also provided an internal bug 
+                titles including the PSP and PS3 formats. The system also provided an internal bug
                 tracking solution written in PHP and PostGreSQL, which was translated into 3 languages
                 by gettext.</p>
 
@@ -106,8 +103,9 @@
                     <li><a target="_blank" href="https://www.scedev.net/">scedev</a></li>
                 </ul>
             </div>
-
-            <div class="span6 role">
+          </div>
+          <div class="experience">
+            <div class="role">
                 <h2>PURE FM <small>(Portsmouth University)</small></h2>
                 <h3><small>July 2005 - Summer 2008</small></h3>
                 <ul class="skills">
@@ -132,4 +130,3 @@
             </div>
         </div>
     </div>
-
