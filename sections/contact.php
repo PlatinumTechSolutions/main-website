@@ -83,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="span6">
                 <h3>About You</h3>
                 <p>
-                    Your name<span class="required">*</span><br />
+                    Name<span class="required">*</span><br />
                     <input type="text" name="name" value="" class="" />
                 </p>
 
@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </p>
 
                 <p>
-                    Your website<br/>
+                    Website<br/>
                     <input type="text" name="website" value="" />
                 </p>
             </div>

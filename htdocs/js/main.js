@@ -8,14 +8,14 @@ $(document).ready(function(){
 
    $(window).scroll(function() {
      // HTML5 proves useful for helping with creating JS functions!
-     // also, negative value because we're scrolling upwards                             
-     var yPos = -($window.scrollTop() / $scroll.data('speed')); 
+     // also, negative value because we're scrolling upwards
+     var yPos = -($window.scrollTop() / $scroll.data('speed'));
 
      // background position
      var coords = '50% '+ yPos + 'px';
 
      // move the background
-     $scroll.css({ backgroundPosition: coords });    
+     $scroll.css({ backgroundPosition: coords });
      }); // end window scroll
    });  // end section function
 }); // close out script

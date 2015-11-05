@@ -1,7 +1,7 @@
 
     <div class="container">
         <div class="page-header">
-            <h2>Experience <small>Companies I've worked with over the years</small></h2>
+            <h2>Experience <small>Companies I've worked with</small></h2>
         </div>
 
         <div class="experience">
