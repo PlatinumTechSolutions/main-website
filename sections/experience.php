@@ -6,6 +6,36 @@
 
         <div class="experience">
             <div class="role">
+                <h2>BAFTA Research</h2>
+                <h3><small>November 2015 - December 2015</small></h3>
+                <ul class="skills">
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>AWS</li>
+                    <li>Memcache</li>
+                    <li>Symfony2</li>
+                    <li>Doctrine</li>
+                    <li>Git</li>
+                    <li>Jenkins</li>
+                    <li>BDD</li>
+                    <li>Behat</li>
+                    <li>TDD</li>
+                    <li>JIRA</li>
+                    <li>Agile</li>
+                    <li>PHPUnit</li>
+                </ul>
+
+                <p>Consulting on the development a the visible rights video portal. Written in Symfony2
+                and using an in-house API to transcode videos, the system was a MVP to allow researchers
+                to upload video clips for producers and publishers to shortlist from.</p>
+
+                <p>Code Review is conducted on all Pull Requests before they are accepted into the main
+                dev branch. Work is conducted in 1 week agile sprints.</p>
+
+            </div>
+        </div>
+        <div class="experience">
+            <div class="role">
                 <h2>Rightster</h2>
                 <h3><small>July 2013 - November 2015</small></h3>
                 <ul class="skills">
@@ -38,8 +68,8 @@
                     <li><a target="_blank" href="https://my.rightster.com/">my rightster</a></li>
                 </ul>
             </div>
-          </div>
-          <div class="experience">
+        </div>
+        <div class="experience">
             <div class="role">
                 <h2>Time Inc. UK <small>(formally IPC Media)</small></h2>
                 <h3><small>April 2008 - June 2013</small></h3>
