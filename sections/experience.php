@@ -6,6 +6,39 @@
 
         <div class="experience">
             <div class="role">
+                <h2>Kurt Geiger</h2>
+                <h3><small>January 2016 - current</small></h3>
+                <ul class="skills">
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>AWS</li>
+                    <li>Memcache</li>
+                    <li>Symfony3</li>
+                    <li>Doctrine</li>
+                    <li>Git</li>
+                    <li>GO-CD</li>
+                    <li>BDD</li>
+                    <li>Behat</li>
+                    <li>TDD</li>
+                    <li>JIRA</li>
+                    <li>Agile</li>
+                    <li>PHPUnit</li>
+                </ul>
+
+                <p>Developing a custom CMS tool in Symfony3 (3.0.1) to control blocks of content across
+		multiple websites.</p>
+
+		<p>Deployed in AWS and using GO-CD for continuous delivery. Developed in an Agile way
+		and using TDD with a mixture of PHPUnit and Behat.</p>
+
+                <p>Code Review is conducted on all Pull Requests before they are accepted into the main
+		develop branch. Work is conducted in 2 week sprints with an end demo to stakeholders
+		each iteration.</p>
+
+            </div>
+        </div>
+        <div class="experience">
+            <div class="role">
                 <h2>BAFTA Research</h2>
                 <h3><small>November 2015 - December 2015</small></h3>
                 <ul class="skills">

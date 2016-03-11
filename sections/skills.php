@@ -12,7 +12,7 @@
             and Javascript.</strong></p>
 
             <p>I have extensive knowledge of <strong>Object Oriented development, Design patterns,
-            MVC frameworks</strong> (including <strong>Symfony 1.x, Symfony2, Silex and Zend</strong>),
+            MVC frameworks</strong> (including <strong>Symfony 1.x, Symfony2, Symfony3, Silex and Zend</strong>),
             <strong>High traffic web systems, Continuous Deployment tools</strong> and various testing
             strategies for different platforms. </p>
 
