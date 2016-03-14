@@ -1,10 +1,11 @@
 
+<div id="skills">
     <div class="container">
         <div class="page-header">
             <h2>My Skills <small>include</small></h2>
         </div>
 
-        <div class="row-fluid">
+        <div class="row-fluid skills">
             <p>The ability to develop using a wide range of technologies. I have excellent knowledge
             of <strong>PHP, MySQL, PostGreSQL, Apache, NginX, AWS, Elasticsearch, Redis, Memcache,
             SVN and git</strong>. I have good knowledge of <strong>Akamai, ZTM, SOLR, MongoDB, bash
@@ -18,13 +19,13 @@
 
             <p>The ability to administer and configure web servers using automated tools such as
             <strong>salt, puppet and chef</strong>. Experience with the set up of <strong>vagrant</strong>
-            for local development. As well as knowledge on how to generate <strong>RPMs</strong> for 
+            for local development. As well as knowledge on how to generate <strong>RPMs</strong> for
             continuous deployment.</p>
 
             <p>The ability to manage an IT team to deliver projects in an agile manor with use of tools
             including <strong>JIRA, Elementool, TRAC and Agilo</strong>. Running scrum and burndown
             within a sprint, including story estimation and sizing, planning poker and retrospectives.
-            Ensuring <strong>code quality</strong> with GitHub <strong>code reviews</strong> and TDD with 
+            Ensuring <strong>code quality</strong> with GitHub <strong>code reviews</strong> and TDD with
             <strong>unit tests run on a CI environment</strong>.</p>
 
             <p>The ability to mentor, train and get the best out of my team members and therefore
@@ -33,4 +34,4 @@
             <p>An in depth knowledge of GNU/Linux (mainly Debian based) and Windows.</p>
         </div>
     </div>
-
+</div>

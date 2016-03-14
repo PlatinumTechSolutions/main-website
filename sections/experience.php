@@ -1,4 +1,5 @@
 
+<div id="experience">
     <div class="container">
         <div class="page-header">
             <h2>Experience <small>Companies I've worked with</small></h2>
@@ -193,3 +194,26 @@
             </div>
         </div>
     </div>
+
+    <div class="clients">
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="/images/clients/100x200-voucher-codes.jpg" alt="" />
+                    <img src="/images/clients/100x200-kurt-geiger.jpg" alt="" />
+                    <img src="/images/clients/100x200-bafta-research.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img src="/images/clients/100x200-rightster.png" alt="" />
+                    <img src="/images/clients/100x200-time-inc-uk.jpeg" alt="" />
+                    <img src="/images/clients/100x200-scee.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    $('#myCarousel').carousel({
+    	interval:  4000
+	});
+</script>

@@ -1,7 +1,8 @@
 
+<div id="footer">
     <div class="container">
-        <div class="row-fluid">
-            <div class="span7 bio">
+        <div class="row">
+            <div class="bio">
                 <div class="avatar">
                     <img src="/images/avatar.jpg" width="80" height="80" />
                 </div>
@@ -9,8 +10,9 @@
                 various backend technologies to produce robust systems for any situation. With a passion
                 for quality and keen eye for detail, he takes pride in all projects he has contributed to.</p>
             </div>
-            <div class="span1"></div>
-            <div class="span4">
+        </div>
+        <div class="row">
+            <div class="">
                 <ul class="social">
                     <li><a href="tel:+447905323168"><i class="fa fa-phone"></i> call me +44 (0) 7905 323 168</a></li>
                     <li><a href="mailto://hello@platinumtechsolutions.co.uk"><i class="fa fa-envelope"></i> hello@platinumtechsolutions.co.uk</a></li>
@@ -25,3 +27,4 @@
 
         <div class="copyright">&copy; 2016, Platinum Tech Solutions - VAT No: 225 4503 33</div>
     </div>
+</div>
