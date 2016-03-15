@@ -5,6 +5,7 @@ require('../common.php');
 ?><html class="no-js" lang="en">
 <head>
     <?php $t->display('head.php'); ?>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 </head>
 <body>
 

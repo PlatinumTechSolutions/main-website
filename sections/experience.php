@@ -1,6 +1,6 @@
 
 <div id="experience">
-    <div class="container">
+    <div class="container-fluid">
         <div class="page-header">
             <h2>Experience <small>Companies I've worked with</small></h2>
         </div>

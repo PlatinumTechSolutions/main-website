@@ -1,6 +1,6 @@
 
 <div id="skills">
-    <div class="container">
+    <div class="container-fluid">
         <div class="page-header">
             <h2>My Skills <small>include</small></h2>
         </div>
