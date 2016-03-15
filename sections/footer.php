@@ -23,5 +23,5 @@
             </div>
         </div>
 
-        <div class="copyright">&copy; 2015, Platinum Tech Solutions - VAT No: 225 4503 33</div>
+        <div class="copyright">&copy; 2016, Platinum Tech Solutions - VAT No: 225 4503 33</div>
     </div>
