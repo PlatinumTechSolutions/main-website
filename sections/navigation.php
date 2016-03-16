@@ -1,4 +1,3 @@
-<!-- Static navbar -->
 
 <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -19,12 +18,3 @@
         </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
 </nav>
-
-<div id="brand">
-    <div class="logo">
-        <a class="brand" href="/">
-            <h1>Platinum</h1>
-            <h2>- Tech Solutions -</h2>
-        </a>
-    </div>
-</div>
