@@ -12,6 +12,27 @@ a, a:hover, a:active { color: #FFF; }
     border-radius: 0;
 }
 
+.navbar-toggle {
+    float: left;
+    margin: 8px;
+}
+
+.page-header {
+    background: #FFF;
+    padding: 10px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.page-header * {
+    padding: 0;
+    margin: 0;
+}
+
+#brand {
+    margin-bottom: 20px;
+}
+
 #brand .logo {
   margin: 0px auto;
   width: 238px;
@@ -41,10 +62,31 @@ a, a:hover, a:active { color: #FFF; }
 #skills .skills, .experience, #contact form {
     border-bottom: 20px solid #5a6991;
     background: #FFF;
-    padding: 0 10px;
     margin-top: 10px;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+#skills .skills {
+    padding: 10px;
+}
+
+#skills .skills strong {
+    color: #5a6991;
+}
+
+.experience .logo-kurt-geiger { background: #D21034; }
+.experience .logo-rightster { background: #000; }
+.experience .logo-time { background: #000; }
+
+.experience .logo img {
+    margin: 0px auto;
+    width: 200px;
+    display: block;
+}
+
+.experience .role {
+    padding: 0 10px;
 }
 
 .experience ul {
@@ -67,12 +109,8 @@ a, a:hover, a:active { color: #FFF; }
     text-decoration: none;
 }
 
-.clients {
-    text-align: center;
-}
-.carousel-inner>.item>img, .carousel-inner>.item>a>img {
-    display:inline-block;
-    margin: 5px;
+#contact form {
+    padding: 10px;
 }
 
 #contact form h3 {
@@ -87,7 +125,11 @@ a, a:hover, a:active { color: #FFF; }
 #footer {
     background: #5a6991;
     color: #FFF;
-    padding: 10px 0;
+    padding: 10px;
+}
+
+#footer .social {
+    text-align: center;
 }
 
 .copyright { text-align: center; padding: 10px; }
