@@ -18,15 +18,21 @@ a, a:hover, a:active { color: #FFF; }
 }
 
 .page-header {
-    background: #FFF;
+    background: #b4bed5;
     padding: 10px;
     margin: 0;
     margin-top: 5px;
+    border-radius: 5px;
 }
 
 .page-header * {
     padding: 0;
     margin: 0;
+    color: #FFF;
+}
+
+.page-header small {
+    color: #000;
 }
 
 #brand {
@@ -61,10 +67,11 @@ a, a:hover, a:active { color: #FFF; }
 
 #skills .skills, .experience, #contact form {
     border-bottom: 20px solid #5a6991;
-    background: #FFF;
+    background: #b4bed5;
+    color: #FFF;
     margin-top: 10px;
     margin-bottom: 20px;
-    border-radius: 0 0 5px 5px;
+    border-radius: 5px;
 }
 
 #skills .skills {
@@ -77,6 +84,10 @@ a, a:hover, a:active { color: #FFF; }
 
 .experience .role {
     padding: 10px;
+}
+
+.experience .role h2 {
+    margin-top: 0;
 }
 
 .experience ul {
