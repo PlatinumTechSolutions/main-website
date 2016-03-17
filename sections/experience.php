@@ -114,11 +114,8 @@ $experiences[] = [
 <?php foreach ($experiences as $experience) { ?>
 
     <div class="experience">
-        <div class="logo logo-<?php echo $experience['class'] ?>">
-            <img src="<?php echo $experience['logo'] ?>" alt="<?php echo $experience['name'] ?>" />
-        </div>
         <div class="role">
-            <h2 style="display: none;"><?php echo $experience['name'] ?></h2>
+            <h2><?php echo $experience['name'] ?></h2>
             <h3><small><?php echo $experience['dates'] ?></small></h3>
             <ul class="skills">
             <?php foreach ($experience['skills'] as $skill) { ?>

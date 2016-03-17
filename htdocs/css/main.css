@@ -75,18 +75,8 @@ a, a:hover, a:active { color: #FFF; }
     color: #5a6991;
 }
 
-.experience .logo-kurt-geiger { background: #D21034; }
-.experience .logo-rightster { background: #000; }
-.experience .logo-time { background: #000; }
-
-.experience .logo img {
-    margin: 0px auto;
-    width: 200px;
-    display: block;
-}
-
 .experience .role {
-    padding: 0 10px;
+    padding: 10px;
 }
 
 .experience ul {

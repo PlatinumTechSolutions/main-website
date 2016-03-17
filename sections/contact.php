@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ?>
 
-<div id="contact" class="container-fluid">
+<div id="contact">
     <div class="page-header">
         <h2>Contact me <small>it's good to talk</small></h2>
     </div>
