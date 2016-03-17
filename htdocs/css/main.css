@@ -134,10 +134,10 @@ a, a:hover, a:active { color: #FFF; }
 }
 
 #footer .avatar {
-    border: 1px solid #FFF;
-    border-radius: 3px;
-    padding: 0;
+    padding: 1px;
     margin: 0 10px;
+    background: #FFF;
+    border-radius: 10px;
 }
 
 .copyright { text-align: center; padding: 10px; }
@@ -152,4 +152,4 @@ ul.social a, ul.social a:hover { color: #FFF; }
 ul.links li { display:inline; margin-right: 10px; }
 
 .bio .avatar { float: left; padding: 2px 8px 8px 0; }
-.bio .avatar img { border-radius: 6px; border: 1px solid #5a6991; }
+.bio .avatar img { border-radius: 10px; border: 1px solid #FFF; }
