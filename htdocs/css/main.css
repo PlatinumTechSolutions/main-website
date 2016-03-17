@@ -7,14 +7,27 @@ body {
 a, a:hover, a:active { color: #FFF; }
 
 .navbar-default, .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #AAA;
-    background: #FFF;
+    border-color: #5a6991;
+    background: #b4bed5;
     border-radius: 0;
 }
 
-.navbar-toggle {
+.navbar-default .navbar-nav>li>a {
+    color: #5a6991;
+}
+
+.navbar-default .navbar-toggle {
     float: left;
     margin: 8px;
+    border-color: #5a6991;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background: #EEE;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background: #5a6991;
 }
 
 .page-header {
@@ -86,8 +99,13 @@ a, a:hover, a:active { color: #FFF; }
     padding: 10px;
 }
 
-.experience .role h2 {
+.experience .role h2,
+.experience .role h3 {
     margin-top: 0;
+}
+
+.experience .role h3 small {
+    color: #5a6991;
 }
 
 .experience ul {
