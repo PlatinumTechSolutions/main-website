@@ -13,7 +13,7 @@ require('../common.php');
     <!-- navigation -->
     <?php $t->display('navigation.php'); ?>
 
-    <div class="container-fluid">
+    <div class="container">
         <!-- logo -->
         <?php $t->display('brand.php'); ?>
         <!-- skills -->

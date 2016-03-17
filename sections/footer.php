@@ -1,6 +1,6 @@
 
 <div id="footer">
-    <div class="bio">
+    <div class="row bio">
         <div class="avatar">
             <img src="/images/avatar.jpg" width="80" height="80" />
         </div>
@@ -8,7 +8,7 @@
         various backend technologies to produce robust systems for any situation. With a passion
         for quality and keen eye for detail, he takes pride in all projects he has contributed to.</p>
     </div>
-    <div class="">
+    <div class="row">
         <ul class="social">
             <li><a href="tel:+447905323168"><i class="fa fa-phone"></i> call me +44 (0) 7905 323 168</a></li>
             <li><a href="mailto://hello@platinumtechsolutions.co.uk"><i class="fa fa-envelope"></i> hello@platinumtechsolutions.co.uk</a></li>
