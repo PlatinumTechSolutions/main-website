@@ -1,6 +1,6 @@
 
 body {
-    background: #EEE;
+    background: #FFF;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -49,6 +49,7 @@ a, a:hover, a:active { color: #FFF; }
 }
 
 #brand {
+    margin-top: 60px;
     margin-bottom: 20px;
 }
 
@@ -183,8 +184,12 @@ a, a:hover, a:active { color: #FFF; }
     padding: 20px;
 }
 
+#footer .bio {
+    text-align: justify;
+}
+
 #footer .social {
-    text-align: center;
+    text-align: right;
 }
 
 #footer .avatar {
