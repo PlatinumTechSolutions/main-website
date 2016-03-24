@@ -7,21 +7,21 @@
 <style>
 
 body {
-  background: #EEE;
+  background: #<?php if ($_REQUEST['print']): ?>FFF<?php else: ?>EEE<?php endif; ?>;
   font-family: 'Ubuntu', sans-serif;
   margin:0;
   padding: 0;
 }
 
 .col-container {
-  background: #DDD;
+  background: #<?php if ($_REQUEST['print']): ?>FFF<?php else: ?>DDD<?php endif; ?>;
   margin: 0px auto;
   width: 510px;
   padding: 20px 0;
 }
 
 .col-container .heading {
-  background: #DDD;
+  background: #<?php if ($_REQUEST['print']): ?>FFF<?php else: ?>DDD<?php endif; ?>;
   padding: 0px;
   font-weight: bold;
   text-align: center;
@@ -30,18 +30,31 @@ body {
 .business-card {
   background: #5a6991;
   margin: 30px;
+
+<?php if ($_REQUEST['print']): ?>
+  width: 500px;
+  height: 280px;
+  border: 1px solid #AAA;
+<?php else: ?>
   width: 450px;
   height: 250px;
 
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+<?php endif; ?>
 }
 
 .business-card .container {
   background: #FFF;
+
+<?php if ($_REQUEST['print']): ?>
+  width: 500px;
+  height: 230px;
+<?php else: ?>
   width: 450px;
   height: 230px;
+<?php endif; ?>
 }
 
 .business-card .tools {
@@ -59,7 +72,7 @@ body {
 }
 
 .details {
-  padding: 20px;
+  padding: <?php if ($_REQUEST['print']): ?>40<?php else: ?>20<?php endif; ?>px;
   padding-top: 54px;
   color: #555;
 }
@@ -79,7 +92,10 @@ body {
   padding: 2px 0;
 }
 
-.qr-code { float: right; margin: 16px; }
+.qr-code {
+    float: right;
+    margin: <?php if ($_REQUEST['print']): ?>18<?php else: ?>16<?php endif; ?>px;
+}
 
 #business-card-front .logo {
   margin: 0px auto;
@@ -105,6 +121,10 @@ body {
   font-size: 30px;
   border-top: 4px solid #777;
 }
+
+<?php if ($_REQUEST['print']): ?>
+
+<?php endif; ?>
 
 </style>
 
