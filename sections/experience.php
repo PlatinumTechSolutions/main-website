@@ -8,9 +8,11 @@ $experiences[] = [
     'name'   => 'VoucherCodes.co.uk',
     'dates'  => 'March 2016 - current',
     'skills' => [
-        'PHP', 'MySQL', 'Memcache', 'Git', 'TeamCity', 'TDD', 'JIRA', 'Agile', 'PHPUnit',
+        'PHP', 'Smarty', 'MySQL', 'Memcache', 'Git', 'TeamCity', 'Docker' 'TDD', 'JIRA', 'Agile', 'PHPUnit',
     ],
     'info' => [
+        'Developing multiple new features for the Consumer Engagement Team. Including the rewarded based system for cosumers.',
+        'Written in a customised PHP framework, using smarty templates, built in an agile way, with 2 week sprints. continuous Integraton is run via TeamCity, which also provides a way to deploy a test version of the code to a docker instance for manual QA.',
     ],
 ];
 $experiences[] = [
