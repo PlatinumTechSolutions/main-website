@@ -1,7 +1,7 @@
 
 <div id="skills">
     <div class="page-header">
-        <h2>My Skills <small>include</small></h2>
+        <h2>My Skills <small>Include but not limited to</small></h2>
     </div>
 
     <div class="skills">

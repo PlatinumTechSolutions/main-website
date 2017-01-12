@@ -11,7 +11,7 @@ require('../common.php');
 
 <div class="site-wrapper">
     <!-- navigation -->
-    <?php $t->display('navigation.php'); ?>
+    <?php //$t->display('navigation.php'); ?>
 
     <div class="container">
         <!-- logo -->
