@@ -3,16 +3,30 @@
 $experiences = [];
 
 $experiences[] = [
+    'logo'   => '/images/clients/100x200-squakwa.jpg',
+    'class'  => 'squawka',
+    'name'   => 'Squakwa',
+    'dates'  => 'July 2016 - current',
+    'skills' => [
+        'PHP', 'ElasticSearch', 'Doctine', 'Symfony3', 'REST', 'MySQL', 'Memcache', 'Git', 'Docker', 'Travis', 'TDD', 'JIRA', 'Agile', 'PHPUnit',
+    ],
+    'info' => [
+        'Working within the Core team to maintain the existing REST API written in Symfony2 initially my main task was to create a stats micro-service powered by Symfony3 and ElasticSearch. This service pulls data from the REST-API and then uses aggregations to generate stats for football players & teams.',
+        'Tools used: PHP, Symfony 2 & 3, ElasticSearch, AWS, MySQL, Docker, PHPUnit, git, github, Travis, JIRA, & confluence.',
+    ],
+];
+$experiences[] = [
     'logo'   => '/images/clients/100x200-voucher-codes.jpg',
     'class'  => 'vouchercodes',
     'name'   => 'VoucherCodes.co.uk',
-    'dates'  => 'March 2016 - current',
+    'dates'  => 'March 2016 - July 2016',
     'skills' => [
-        'PHP', 'Smarty', 'MySQL', 'Memcache', 'Git', 'TeamCity', 'Docker' 'TDD', 'JIRA', 'Agile', 'PHPUnit',
+        'PHP', 'Smarty', 'MySQL', 'Memcache', 'Git', 'TeamCity', 'Docker', 'TDD', 'JIRA', 'Agile', 'PHPUnit',
     ],
     'info' => [
-        'Developing multiple new features for the Consumer Engagement Team. Including the rewarded based system for cosumers.',
-        'Written in a customised PHP framework, using smarty templates, built in an agile way, with 2 week sprints. continuous Integraton is run via TeamCity, which also provides a way to deploy a test version of the code to a docker instance for manual QA.',
+        'Built and delivered a customer reward system based on requirements from the business which was able to track users leaving the website, locate relevant transaction information within affiliate networks, and evaluate eligibility for reward based on CMS controlled qualifiers. The code was written within the custom PHP framework used on their website.',
+        'I also spent some time optimising the backend unit tests for the main VoucherCodes websites reducing the execution time of the tests from 30 minutes to 10 seconds.',
+        'Tools used: PHP, MySQL, Docker, PHPUnit, jQuery, Javascript, SOAP, git, stash, JIRA, & confluence.',
     ],
 ];
 $experiences[] = [
