@@ -49,74 +49,57 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ?>
 
-<div class="container">
+<div id="contact">
     <div class="page-header">
         <h2>Contact me <small>it's good to talk</small></h2>
     </div>
 
 <?php if ($emailSent === true): ?>
 
-    <div class="form row-fluid">
-        <div class="span1"></div>
-        <div class="span10 thank-you">
-            <h3>Thank you for your message, we will be in contact with you shortly.</h3>
-        </div>
-        <div class="span1"></div>
+    <div class="thank-you bg-success text-success">
+        <h3>Thank you for your message, we will be in contact with you shortly.</h3>
     </div>
 
 <?php else: ?>
     <?php if (count($errors) > 0): ?>
 
-    <div class="form row-fluid">
-        <div class="span1"></div>
-        <div class="span10 form-errors">
-            <h3>It looks like you missed something</h3>
-            <p>Please make sure you enter a name and email address so that I can contact you.</p>
-        </div>
-        <div class="span1"></div>
+    <div class="form-errors bg-danger text-danger">
+        <h3>It looks like you missed something</h3>
+        <p>Please make sure you enter a name and email address so that I can contact you.</p>
     </div>
 
     <?php endif; ?>
 
-    <form class="contact-form" action="/index.php#contact" method="post">
-        <div class="form row-fluid">
-            <div class="span6">
-                <h3>About You</h3>
-                <p>
-                    Name<span class="required">*</span><br />
-                    <input type="text" name="name" value="" class="" />
-                </p>
+    <form class="contact-form form-horizontal" action="/index.php#contact" method="post">
+        <h3>About You</h3>
 
-                <p>
-                    Email address<span class="required">*</span><br />
-                    <input type="email" name="email" value="" />
-                </p>
+        <label for="contact-name">Name<span class="required text-danger">*</label>
+        <input class="form-control" id="contact-name" type="text" name="name" value="" />
 
-                <p>
-                    Telephone number or Skype username<br/>
-                    <input type="text" name="phone" value="" />
-                </p>
-
-                <p>
-                    Website<br/>
-                    <input type="text" name="website" value="" />
-                </p>
-            </div>
-            <div class="span6">
-                <h3>Content</h3>
-                <p>
-                    Message<span class="required">*</span><br />
-                    <textarea name="message" cols="120" rows="10"></textarea>
-                </p>
-            </div>
+        <label for="contact-email">Email address<span class="required text-danger">*</span></label>
+        <div class="input-group">
+            <span class="input-group-addon" id="contact-email-addon">@</span>
+            <input class="form-control" id="contact-email" type="email" name="email" value="" aria-describedby="contact-email-addon" />
         </div>
 
-        <div class="form row-fluid">
-            <div class="span9"></div>
-            <div class="span3 submit">
-                <input class="btn btn-submit" type="submit" value="Send Message" />
-            </div>
+        <label for="contact-number">Telephone number or Skype username</label>
+        <input class="form-control" id="contact-number" type="text" name="phone" value="" />
+
+        <label for="contact-website">Website</label>
+        <div class="input-group">
+            <span class="input-group-addon" id="contact-website-addon">http://</span>
+            <input class="form-control" id="contact-website" type="text" name="website" value="" aria-describedby="contact-website-addon" />
         </div>
+
+        <h3>Content</h3>
+        <label for="contact-message">Message<span class="required text-danger">*</span></label>
+        <textarea class="form-control" id="contact-message" name="message" rows="10"></textarea>
+
+        <div class="submit pull-right">
+            <input class="btn btn-submit btn-primary" type="submit" value="Send Message" />
+        </div>
+
+        <div class="clearfix"></div>
     </form>
 <?php endif; ?>
 

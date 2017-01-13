@@ -1,195 +1,159 @@
+<?php
 
-    <div class="container">
-        <div class="page-header">
-            <h2>Experience <small>Companies I've worked with</small></h2>
-        </div>
+$experiences = [];
 
-        <div class="experience">
-            <div class="role">
-                <h2>Kurt Geiger</h2>
-                <h3><small>January 2016 - current</small></h3>
-                <ul class="skills">
-                    <li>PHP</li>
-                    <li>MySQL</li>
-                    <li>AWS</li>
-                    <li>Memcache</li>
-                    <li>Symfony3</li>
-                    <li>Doctrine</li>
-                    <li>Git</li>
-                    <li>GO-CD</li>
-                    <li>BDD</li>
-                    <li>Behat</li>
-                    <li>TDD</li>
-                    <li>JIRA</li>
-                    <li>Agile</li>
-                    <li>PHPUnit</li>
-                </ul>
+$experiences[] = [
+    'logo'   => '/images/clients/100x200-squakwa.jpg',
+    'class'  => 'squawka',
+    'name'   => 'Squakwa',
+    'dates'  => 'July 2016 - current',
+    'skills' => [
+        'PHP', 'ElasticSearch', 'Doctine', 'Symfony3', 'REST', 'MySQL', 'Memcache', 'Git', 'Docker', 'Travis', 'TDD', 'JIRA', 'Agile', 'PHPUnit',
+    ],
+    'info' => [
+        'Working within the Core team to maintain the existing REST API written in Symfony2 initially my main task was to create a stats micro-service powered by Symfony3 and ElasticSearch. This service pulls data from the REST-API and then uses aggregations to generate stats for football players & teams.',
+        'Tools used: PHP, Symfony 2 & 3, ElasticSearch, AWS, MySQL, Docker, PHPUnit, git, github, Travis, JIRA, & confluence.',
+    ],
+];
+$experiences[] = [
+    'logo'   => '/images/clients/100x200-voucher-codes.jpg',
+    'class'  => 'vouchercodes',
+    'name'   => 'VoucherCodes.co.uk',
+    'dates'  => 'March 2016 - July 2016',
+    'skills' => [
+        'PHP', 'Smarty', 'MySQL', 'Memcache', 'Git', 'TeamCity', 'Docker', 'TDD', 'JIRA', 'Agile', 'PHPUnit',
+    ],
+    'info' => [
+        'Built and delivered a customer reward system based on requirements from the business which was able to track users leaving the website, locate relevant transaction information within affiliate networks, and evaluate eligibility for reward based on CMS controlled qualifiers. The code was written within the custom PHP framework used on their website.',
+        'I also spent some time optimising the backend unit tests for the main VoucherCodes websites reducing the execution time of the tests from 30 minutes to 10 seconds.',
+        'Tools used: PHP, MySQL, Docker, PHPUnit, jQuery, Javascript, SOAP, git, stash, JIRA, & confluence.',
+    ],
+];
+$experiences[] = [
+    'logo'   => '/images/clients/100x200-kurt-geiger.jpg',
+    'class'  => 'kurt-geiger',
+    'name'   => 'Kurt Geiger',
+    'dates'  => 'January 2016 - February 2016',
+    'skills' => [
+        'PHP', 'MySQL', 'AWS', 'Memcache', 'Symfony3', 'Doctrine', 'Git', 'GO-CD', 'BDD', 'Behat', 'TDD', 'JIRA', 'Agile', 'PHPUnit'
+    ],
+    'info' => [
+        'Developing a custom CMS tool in Symfony3 (3.0.1) to control blocks of content across multiple websites.',
+        'Deployed in AWS and using GO-CD for continuous delivery. Developed in an Agile way and using TDD with a mixture of PHPUnit and Behat.',
+        'Code Review is conducted on all Pull Requests before they are accepted into the main develop branch. Work is conducted in 2 week sprints with an end demo to stakeholders each iteration.',
+    ],
+];
+$experiences[] = [
+    'logo'   => '/images/clients/100x200-bafta-research.jpg',
+    'class'  => 'bafta',
+    'name'   => 'BAFTA Research',
+    'dates'  => 'November 2015 - December 2015',
+    'skills' => [
+        'PHP', 'MySQL', 'AWS', 'Memcache', 'Symfony2', 'Doctrine', 'Git', 'Jenkins',  'BDD', 'Behat', 'TDD', 'JIRA', 'Agile', 'PHPUnit'
+    ],
+    'info' => [
+        'Consulting on the development a the visible rights video portal. Written in Symfony2 and using an in-house API to transcode videos, the system was a MVP to allow researchers to upload video clips for producers and publishers to shortlist from.',
+        'Code Review is conducted on all Pull Requests before they are accepted into the main dev branch. Work is conducted in 1 week agile sprints.',
+    ],
+];
+$experiences[] = [
+    'logo'   => '/images/clients/100x200-rightster.png',
+    'class'  => 'rightster',
+    'name'   => 'Rightster',
+    'dates'  => 'July 2013 - November 2015',
+    'skills' => [
+        'PHP', 'PostGreSQL', 'ElasticSearch', 'AWS', 'Redis', 'Memcache', 'Akamai', 'Git', 'encoding.com API', 'Google Drive API', 'Jenkins', 'TDD', 'JIRA',  'Agile', 'PHPUnit'
+    ],
+    'info' => [
+        'Working as the Technical Lead to the core platform, this included an in-house created MVC framework deployed on AWS instances. Using PostGreSQL and ElasticSearch for storage, as well as Akamai, Cloudfront, Redis and Memcache for caching.',
+        'Platform unit tests are written in PHPUnit and run on every GitHub Pull Request by a Jenkins cluster. Code Review and QA is conducted on all Pull Requests before they are accepted into the main dev branch. Work is conducted in 2 week agile sprints.',
+    ],
+    'links' => [
+        'https://my.rightster.com/' => 'my.rightster.com',
+    ],
+];
+$experiences[] = [
+    'logo'   => '/images/clients/100x200-time-inc-uk.jpeg',
+    'class'  => 'time',
+    'name'   => 'Time Inc. UK (formally IPC Media)',
+    'dates'  => 'April 2008 - June 2013',
+    'skills' => [
+        'PHP', 'MySQL', 'SOLR', 'SubVersion', 'Git', 'Memcache', 'Akamai', 'Savvis', 'REST', 'Jenkins', 'Symfony MVC', 'TDD', 'Selenium', 'PHPUnit', 'MongoDB'
+    ],
+    'info' => [
+        'Projects included the main CMS system for over 30 magazine websites. Bespoke galleries API written for House to Home. Recipe search engine updates including faceted search within SOLR. API service to power mobile optimised versions of 20 magazine websites.',
+        'Release Management for serval critial system updates, including the migration of most magazine websites to a new image storage service.',
+    ],
+    'links' => [
+        'http://www.housetohome.co.uk/' => 'housetohome',
+        'http://www.goodotoknow.co.uk/' => 'goodtoknow',
+        'http://www.womanandhome.com/'  => 'womanandhome',
+    ],
+];
+$experiences[] = [
+    'logo'   => '/images/clients/100x200-scee.png',
+    'class'  => 'scee',
+    'name'   => 'Sony PlayStation',
+    'dates'  => 'July 2005 - April 2008',
+    'skills' => [
+        'PHP', 'PostGreSQL', 'SubVersion', 'Memcache', 'XHTML', 'CSS', 'JavaScript', 'Multilingual', 'gettext', 'Selenium'
+    ],
+    'info' => [
+        'Helped to build and improve the PlayStation Developer Network (SceDev) which allows game developers to download tools and software to developer games on several PlayStation titles including the PSP and PS3 formats. The system also provided an internal bug tracking solution written in PHP and PostGreSQL, which was translated into 3 languages by gettext.',
+    ],
+    'links' => [
+        'https://www.scedev.net/' => 'scedev',
+    ],
+];
+$experiences[] = [
+    'logo'   => '/images/clients/100x200-purefm.jpg',
+    'class'  => 'pure',
+    'name'   => 'PURE FM (Portsmouth University Radio)',
+    'dates'  => 'July 2005 - Summer 2008',
+    'skills' => [
+        'PHP', 'MySQL', 'SubVersion', 'XHTML', 'CSS', 'JavaScript', 'Audio Streaming'
+    ],
+    'info' => [
+        'Working with university students to improve the radio station website and introducing best practices including SVN source control and design patterns. Helping with the rebrand and relaunch of the student website as well as provide a framework to allow them to build and maintain their own DJ &amp; Show Profile pages.'
+    ],
+    'links' => [
+        'http://www.purefm.com/' => 'purefm.com',
+    ],
+];
 
-                <p>Developing a custom CMS tool in Symfony3 (3.0.1) to control blocks of content across
-		multiple websites.</p>
+?>
+<div id="experience">
+    <div class="page-header">
+        <h2>Experience <small>Companies I've worked with</small></h2>
+    </div>
 
-		<p>Deployed in AWS and using GO-CD for continuous delivery. Developed in an Agile way
-		and using TDD with a mixture of PHPUnit and Behat.</p>
+<?php foreach ($experiences as $experience) { ?>
 
-                <p>Code Review is conducted on all Pull Requests before they are accepted into the main
-		develop branch. Work is conducted in 2 week sprints with an end demo to stakeholders
-		each iteration.</p>
+    <div class="experience">
+        <div class="role">
+            <h2><?php echo $experience['name'] ?></h2>
+            <h3><small><?php echo $experience['dates'] ?></small></h3>
+            <ul class="skills">
+            <?php foreach ($experience['skills'] as $skill) { ?>
+                <li><?php echo $skill ?></li>
+            <?php } ?>
+            </ul>
 
-            </div>
-        </div>
-        <div class="experience">
-            <div class="role">
-                <h2>BAFTA Research</h2>
-                <h3><small>November 2015 - December 2015</small></h3>
-                <ul class="skills">
-                    <li>PHP</li>
-                    <li>MySQL</li>
-                    <li>AWS</li>
-                    <li>Memcache</li>
-                    <li>Symfony2</li>
-                    <li>Doctrine</li>
-                    <li>Git</li>
-                    <li>Jenkins</li>
-                    <li>BDD</li>
-                    <li>Behat</li>
-                    <li>TDD</li>
-                    <li>JIRA</li>
-                    <li>Agile</li>
-                    <li>PHPUnit</li>
-                </ul>
+            <?php foreach($experience['info'] as $para) { ?>
+                <p><?php echo $para ?></p>
+            <?php } ?>
 
-                <p>Consulting on the development a the visible rights video portal. Written in Symfony2
-                and using an in-house API to transcode videos, the system was a MVP to allow researchers
-                to upload video clips for producers and publishers to shortlist from.</p>
+        <?php if (count($experience['links'])) { ?>
+            <ul class="links">
+            <?php foreach ($experience['links'] as $href => $text) { ?>
+                <li><a target="_blank" href="<?php echo $href ?>"><?php echo $text ?></a></li>
+            <?php } ?>
+            </ul>
+        <?php } ?>
 
-                <p>Code Review is conducted on all Pull Requests before they are accepted into the main
-                dev branch. Work is conducted in 1 week agile sprints.</p>
-
-            </div>
-        </div>
-        <div class="experience">
-            <div class="role">
-                <h2>Rightster</h2>
-                <h3><small>July 2013 - November 2015</small></h3>
-                <ul class="skills">
-                    <li>PHP</li>
-                    <li>PostGreSQL</li>
-                    <li>ElasticSearch</li>
-                    <li>AWS</li>
-                    <li>Redis</li>
-                    <li>Memcache</li>
-                    <li>Akamai</li>
-                    <li>Git</li>
-                    <li>encoding.com API</li>
-                    <li>Google Drive API</li>
-                    <li>Jenkins</li>
-                    <li>TDD</li>
-                    <li>JIRA</li>
-                    <li>Agile</li>
-                    <li>PHPUnit</li>
-                </ul>
-
-                <p>Working as the Technical Lead to the core platform, this included an in-house created
-                MVC framework deployed on AWS instances. Using PostGreSQL and ElasticSearch for storage,
-                as well as Akamai, Cloudfront, Redis and Memcache for caching.</p>
-
-                <p>Platform unit tests are written in PHPUnit and run on every GitHub Pull Request by a
-                Jenkins cluster. Code Review and QA is conducted on all Pull Requests before they are
-                accepted into the main dev branch. Work is conducted in 2 week agile sprints.</p>
-
-                <ul class="links">
-                    <li><a target="_blank" href="https://my.rightster.com/">my rightster</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="experience">
-            <div class="role">
-                <h2>Time Inc. UK <small>(formally IPC Media)</small></h2>
-                <h3><small>April 2008 - June 2013</small></h3>
-                <ul class="skills">
-                    <li>PHP</li>
-                    <li>MySQL</li>
-                    <li>SOLR</li>
-                    <li>SubVersion</li>
-                    <li>Git</li>
-                    <li>Memcache</li>
-                    <li>Akamai</li>
-                    <li>Savvis</li>
-                    <li>REST</li>
-                    <li>Jenkins</li>
-                    <li>Symfony MVC</li>
-                    <li>TDD</li>
-                    <li>Selenium</li>
-                    <li>PHPUnit</li>
-                    <li>MongoDB</li>
-                </ul>
-
-                <p>Projects included the main CMS system for over 30 magazine websites. Bespoke
-                galleries API written for House to Home. Recipe search engine updates including
-                faceted search within SOLR. API service to power mobile optimised versions of 20
-                magazine websites.</p>
-
-                <p>Release Management for serval critial system updates, including the migration
-                of most magazine websites to a new image storage service.</p>
-
-                <ul class="links">
-                    <li><a target="_blank" href="http://www.housetohome.co.uk/">housetohome</a></li>
-                    <li><a target="_blank" href="http://www.goodotoknow.co.uk/">goodtoknow</a></li>
-                    <li><a target="_blank" href="http://www.womanandhome.com/">womanandhome</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="experience">
-            <div class="role">
-                <h2>Sony PlayStation</h2>
-                <h3><small>July 2005 - April 2008</small></h3>
-                <ul class="skills">
-                    <li>PHP</li>
-                    <li>PostGreSQL</li>
-                    <li>SubVersion</li>
-                    <li>Memcache</li>
-                    <li>XHTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Multilingual</li>
-                    <li>gettext</li>
-                    <li>Selenium</li>
-                </ul>
-
-                <p>Helped to build and improve the PlayStation Developer Network (SceDev) which allows
-                game developers to download tools and software to developer games on several PlayStation
-                titles including the PSP and PS3 formats. The system also provided an internal bug
-                tracking solution written in PHP and PostGreSQL, which was translated into 3 languages
-                by gettext.</p>
-
-                <ul class="links">
-                    <li><a target="_blank" href="https://www.scedev.net/">scedev</a></li>
-                </ul>
-            </div>
-          </div>
-          <div class="experience">
-            <div class="role">
-                <h2>PURE FM <small>(Portsmouth University)</small></h2>
-                <h3><small>July 2005 - Summer 2008</small></h3>
-                <ul class="skills">
-                    <li>PHP</li>
-                    <li>MySQL</li>
-                    <li>SubVersion</li>
-                    <li>XHTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Audio Streaming</li>
-                </ul>
-
-                <p>Working with university students to improve the radio station website and
-                introducing best practices including SVN source control and design patterns.
-                Helping with the rebrand and relaunch of the student website as well as provide
-                a framework to allow them to build and maintain their own DJ &amp; Show Profile
-                pages.</p>
-
-                <ul class="links">
-                    <li><a target="_blank" href="http://www.purefm.com/">purefm.com</a></li>
-                </ul>
-            </div>
         </div>
     </div>
+
+<?php } ?>
+
+</div>
