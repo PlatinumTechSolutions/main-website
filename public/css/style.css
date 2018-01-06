@@ -1,0 +1,42 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 200px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  min-height: 200px;
+  background-color: #222;
+  color: #EEE;
+  padding-top: 20px;
+}
+  .footer ul,
+  .footer li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .footer .address,
+  .footer ul.social {
+    margin-top: 20px;
+  }
+  .footer .vat-number,
+  .footer ul.social {
+    margin-bottom: 20px;
+  }
+  .footer a,
+  .footer a:hover,
+  .footer a:active {
+    color: #EEE;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }

@@ -1,12 +1,54 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="{% block meta_description %}Platinum Tech Solutions{% endblock %}" />
+    <meta name="keywords" content="{% block meta_keywords %}PHP, Symfony, ElasticSearch, AWS, Security Consultants{% endblock %}" />
+    <meta name="author" content="{% block meta_author %}Platinum Tech Solutions Limited{% endblock %}" />
+
+    <title>{% block title %}Platinum Tech Solutions{% endblock %}</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+{% block body %}{% endblock %}
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
+            <div class="copyright">© {{ "now"|date("Y") }}, Platinum Tech Solutions Limited</div>
+            <div class="address">10 Belgrave Close, Rayleigh, Essex, SS6 9GD</div>
+            <div class="registration">Company Registration Number: 09821328</div>
+            <div class="vat-number">VAT Number: 225 4503 33</div>
+          </div>
+          <div class="col-md-4">
+            <ul class="contact">
+              <li><a href="tel:+447905323168">call me +44 (0) 7905 323 168</a></li>
+              <li><a href="mailto://contracts@platinumtechsolutions.co.uk">contracts@platinumtechsolutions.co.uk</a></li>
+            </ul>
+            <ul class="social">
+              <li><a href="https://www.linkedin.com/in/carlcasbolt">@CarlCasbolt on LinkedIn</a></li>
+              <li><a href="https://github.com/carlcasbolt">@CarlCasbolt on GitHub</a></li>
+              <li><a href="https://twitter.com/carlcasbolt">@CarlCasbolt on twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    {% block javascripts %}{% endblock %}
+  </body>
 </html>
