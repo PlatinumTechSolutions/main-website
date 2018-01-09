@@ -6,13 +6,13 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class HomepageController extends Controller
+class ContactController extends Controller
 {
     /**
-     *@Route("/", name="homepage")
+     *@Route("/contact", name="contact")
      */
     public function index()
     {
-        return $this->render('homepage.html.twig');
+        return $this->render('contact.html.twig');
     }
 }
