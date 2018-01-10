@@ -10,57 +10,70 @@
     <title>{% block title %}Platinum Tech Solutions{% endblock %}</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Font Awesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
     <!-- Style -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" />
 
   </head>
   <body>
-
-    <div class="container">
+    <section class="content">
+      <div class="container">
 {% block body %}{% endblock %}
-    </div>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center">Contact Us</h2>
+            <h3 class="text-center">Want to discuss a project or say hello?</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h4>Telephone</h4>
+            <p><a href="tel:+447905323168">+44 (0) 7905 323 168</a></p>
+          </div>
+          <div class="col">
+            <h4>Address</h4>
+              <p>10 Belgrave Close,<br>Rayleigh,<br>Essex, SS6 9GD</p>
+          </div>
+          <div class="col">
+            <h4>Project Enquiry</h4>
+            <p>Want to talk to us about a project?<br>
+              Contact us <a href="{{ path('contact') }}">here</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-          </div>
-          <div class="col-md-4">
-            <div class="copyright">© {{ "now"|date("Y") }}, Platinum Tech Solutions Limited</div>
-            <div class="address">10 Belgrave Close, Rayleigh, Essex, SS6 9GD</div>
-            <div class="registration">Company Registration Number: 09821328</div>
-            <div class="vat-number">VAT Number: 225 4503 33</div>
-          </div>
-          <div class="col-md-4">
-            <ul class="contact">
-              <li><a href="tel:+447905323168">call me +44 (0) 7905 323 168</a></li>
-              <li><a href="mailto://contracts@platinumtechsolutions.co.uk">contracts@platinumtechsolutions.co.uk</a></li>
-            </ul>
-            <ul class="social">
-              <li><a href="https://www.linkedin.com/in/carlcasbolt">@CarlCasbolt on LinkedIn</a></li>
-              <li><a href="https://github.com/carlcasbolt">@CarlCasbolt on GitHub</a></li>
-              <li><a href="https://twitter.com/carlcasbolt">@CarlCasbolt on twitter</a></li>
-            </ul>
+        <div class="row text-center copyright">
+          <div class="col">
+            <div>&copy; {{ "now"|date("Y") }} Platinum Tech Solutions Limited. All Rights Reserved.</div>
+            <div>Company Registration Number: 09821328</div>
+            <div>VAT Number: GB 225 4503 33</div>
           </div>
         </div>
       </div>
     </footer>
 
-    {% block javascripts %}{% endblock %}
-
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112067714-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(){
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
-
       gtag('config', 'UA-112067714-1');
     </script>
+
+    {% block javascripts %}{% endblock %}
 
   </body>
 </html>

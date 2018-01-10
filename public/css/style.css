@@ -1,42 +1,35 @@
 
 html {
   position: relative;
-  min-height: 100%;
+  background: #eee;
 }
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 200px;
+}
+.contact-info {
+  position: relative;
+  padding: 32px 8px 32px 8px;
+}
+.contact-info:after {
+  background: linear-gradient(-45deg, #eee 7px, transparent 0), linear-gradient(45deg, #eee 7px, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 14px 14px;
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 14px;
 }
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  min-height: 200px;
-  background-color: #222;
-  color: #EEE;
-  padding-top: 20px;
+  background-color: #eee;
+  color: #9f9f9f;
+  padding: 20px 0 40px 0;
 }
-  .footer ul,
-  .footer li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .footer .address,
-  .footer ul.social {
-    margin-top: 20px;
-  }
-  .footer .vat-number,
-  .footer ul.social {
-    margin-bottom: 20px;
-  }
-  .footer a,
-  .footer a:hover,
-  .footer a:active {
-    color: #EEE;
-    text-decoration: none;
-  }
-  .footer a:hover {
-    text-decoration: underline;
-  }
+.footer ul, .footer ul li {
+  list-style: none;
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
