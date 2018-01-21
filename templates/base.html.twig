@@ -18,11 +18,24 @@
 
   </head>
   <body>
-    <section class="content">
-      <div class="container">
-{% block body %}{% endblock %}
+    <nav class="navbar navbar-expand-md fixed-top">
+      Platinum Tech Solutions
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ path('contact') }}">Contact</a>
+          </li>
+        </ul>
       </div>
-    </section>
+    </nav>
+
+{% block body %}{% endblock %}
 
     <section class="contact-info">
       <div class="container">
@@ -32,16 +45,21 @@
             <h3 class="text-center">Want to discuss a project or say hello?</h3>
           </div>
         </div>
+      </div>
+
+      <div class="contact-image"></div>
+
+      <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-lg-4 text-center">
             <h4>Telephone</h4>
             <p><a href="tel:+447905323168">+44 (0) 7905 323 168</a></p>
           </div>
-          <div class="col">
+          <div class="col-lg-4 text-center">
             <h4>Address</h4>
               <p>10 Belgrave Close,<br>Rayleigh,<br>Essex, SS6 9GD</p>
           </div>
-          <div class="col">
+          <div class="col-lg-4 text-center">
             <h4>Project Enquiry</h4>
             <p>Want to talk to us about a project?<br>
               Contact us <a href="{{ path('contact') }}">here</a></p>
@@ -54,7 +72,7 @@
       <div class="container">
         <div class="row text-center copyright">
           <div class="col">
-            <div>&copy; {{ "now"|date("Y") }} Platinum Tech Solutions Limited. All Rights Reserved.</div>
+            <div>&copy; 2015-{{ "now"|date("Y") }} Platinum Tech Solutions Limited.</div>
             <div>Company Registration Number: 09821328</div>
             <div>VAT Number: GB 225 4503 33</div>
           </div>
