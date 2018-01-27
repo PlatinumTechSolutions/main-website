@@ -68,3 +68,6 @@ body {
   padding: 10px 0;
   font-weight: 300;
 }
+  .copyright a {
+    color: #ccc;
+  }
