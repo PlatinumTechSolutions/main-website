@@ -2,8 +2,34 @@
 html {
 }
 body {
-  padding-top: 4.5rem;
 }
+
+#brand {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+  #brand .logo {
+    margin: 0px auto;
+    width: 238px;
+    text-align: center;
+  }
+    #brand .logo * {
+      font-weight: normal;
+      color: #777;
+      margin: 0;
+      padding: 0;
+    }
+    #brand *:hover {
+        text-decoration: none;
+    }
+    #brand .logo h1 {
+      font-size: 50px;
+    }
+    #brand .logo h2 {
+      font-size: 30px;
+      border-top: 4px solid #777;
+    }
+
 .footer {
   font: 300 14px/22px 'Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #FFFFFF;
