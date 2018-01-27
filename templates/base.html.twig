@@ -18,7 +18,7 @@
 
   </head>
   <body>
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded fixed-top">
       Platinum Tech Solutions
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,32 +37,14 @@
 
 {% block body %}{% endblock %}
 
-    <section class="contact-info">
+    <section class="footer-cta">
       <div class="container">
         <div class="row">
-          <div class="col">
-            <h2 class="text-center">Contact Us</h2>
-            <h3 class="text-center">Want to discuss a project or say hello?</h3>
+          <div class="col-lg-8">
+            <h3 class="align-middle">Want to discuss a project or say hello?</h3>
           </div>
-        </div>
-      </div>
-
-      <div class="contact-image"></div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 text-center">
-            <h4>Telephone</h4>
-            <p><a href="tel:+447905323168">+44 (0) 7905 323 168</a></p>
-          </div>
-          <div class="col-lg-4 text-center">
-            <h4>Address</h4>
-              <p>10 Belgrave Close,<br>Rayleigh,<br>Essex, SS6 9GD</p>
-          </div>
-          <div class="col-lg-4 text-center">
-            <h4>Project Enquiry</h4>
-            <p>Want to talk to us about a project?<br>
-              Contact us <a href="{{ path('contact') }}">here</a></p>
+          <div class="col-lg-4">
+            <h3 class="align-middle"><a href="{{ path('contact') }}" class="btn btn-lg btn-cta">contact us</a></h3>
           </div>
         </div>
       </div>
@@ -70,15 +52,65 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="row text-center copyright">
-          <div class="col">
-            <div>&copy; 2015-{{ "now"|date("Y") }} Platinum Tech Solutions Limited.</div>
-            <div>Company Registration Number: 09821328</div>
-            <div>VAT Number: GB 225 4503 33</div>
+        <div class="row">
+          <div class="col-lg-4 left-column">
+            <h3>Contact Us</h3>
+            <h4>Telephone</h4>
+            <p><a href="tel:+447905323168">+44 (0) 7905 323 168</a></p>
+            <h4>Address</h4>
+            <p>10 Belgrave Close,<br>Rayleigh,<br>Essex, SS6 9GD</p>
+          </div>
+          <div class="col-lg-8 right-column">
+            <div class="row">
+              <div class="col-lg-4 products-column">
+                <nav>
+                  <h4>Projects</h4>
+                  <ul class="menu">
+                    <li><a href="#">AWS</a></li>
+                    <li><a href="#">ElasticSearch</a></li>
+                    <li><a href="#">Symfony</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-lg-4 services-column">
+                <nav>
+                  <h4>Services</h4>
+                  <ul class="menu">
+                    <li><a href="#">DevOps</a></li>
+                    <li><a href="#">AAA</a></li>
+                    <li><a href="#">BBB</a></li>
+                    <li><a href="#">CCC</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-lg-4 about-column">
+                <nav>
+                  <h4>About</h4>
+                  <ul class="menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            Copyright &copy; 2015-{{ "now"|date("Y") }} Platinum Tech Solutions Limited.
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112067714-1"></script>
