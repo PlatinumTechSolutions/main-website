@@ -1,11 +1,13 @@
 
 html {
 }
+
 body {
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 #brand {
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
   #brand .logo {
