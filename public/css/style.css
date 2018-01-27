@@ -23,7 +23,7 @@ body {
   }
 
 .footer-cta {
-  background-color: #1075BA;
+  background-color: #5A6991;
   color: #FFFFFF;
   text-align: center;
   padding: 50px 0;
@@ -32,8 +32,9 @@ body {
     line-height: 2.4rem;
   }
   .footer-cta .btn-cta {
-    background: linear-gradient(to right,#fa7f24 0,#eb5c24 100%);
+    background: linear-gradient(to right, #8E7D27 0, #D7C97C 100%);
     color: #FFFFFF;
+    border: 0;
   }
 .footer {
     background-color: #55595b;
