@@ -31,11 +31,6 @@ body {
   .footer-cta .row h3 {
     line-height: 2.4rem;
   }
-  .footer-cta .btn-cta {
-    background: linear-gradient(to right, #8E7D27 0, #D7C97C 100%);
-    color: #FFFFFF;
-    border: 0;
-  }
 .footer {
     background-color: #55595b;
     padding: 75px 0 45px 0;
