@@ -46,14 +46,18 @@ body {
     font-size: 3rem;
   }
 
+.contact-form {
+  background: #EEE;
+}
 
-.footer-cta {
+
+.footer-contact {
   background-color: #5A6991;
   color: #FFFFFF;
   text-align: center;
   padding: 50px 0;
 }
-  .footer-cta .row h3 {
+  .footer-contact .row h3 {
     line-height: 2.4rem;
   }
 .footer {
