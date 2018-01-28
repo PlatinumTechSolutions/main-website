@@ -33,11 +33,19 @@ body {
     }
 
 .content-header {
-  background-color: #5A6991;
   color: #FFFFFF;
   text-align: center;
   padding: 88px 0 80px 0;
+  background-color: #5A6991;
+  background-image: url('/img/hero-flash-memory.jpg');
+  background-position: center 0;
+  background-size: cover;
 }
+  .content-header h1 {
+    font-weight: 400;
+    font-size: 3rem;
+  }
+
 
 .footer-cta {
   background-color: #5A6991;
