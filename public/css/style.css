@@ -32,6 +32,13 @@ body {
       border-top: 4px solid #777;
     }
 
+#navbarToggler ul li a {
+  padding: 4px 70px;
+  margin: 2px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .content-header {
   color: #FFFFFF;
   text-align: center;
@@ -49,7 +56,6 @@ body {
 .contact-form {
   background: #EEE;
 }
-
 
 .footer-contact {
   background-color: #5A6991;
@@ -112,3 +118,36 @@ body {
   .copyright a {
     color: #ccc;
   }
+
+.clients {
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+  .clients .client {
+    display: inline-block;
+
+    width: 160px;
+    height: 80px;
+    margin: 10px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .past-clients .client span {
+    display: none;
+  }
+
+.social-links a {
+  color: #999;
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.social-links a:hover {
+  color: #5A6991;
+}
+
+.contact-form, .contact-sidebar {
+  padding: 10px;
+}
