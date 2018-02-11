@@ -17,7 +17,7 @@ class ServicesController extends Controller
     }
 
     /**
-     *@Route("/services/security", name="services_build")
+     *@Route("/services/build", name="services_build")
      */
     public function build()
     {
