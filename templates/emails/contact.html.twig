@@ -229,7 +229,7 @@
                                       <hr style="border: 1px solid #5A6991;">
 
                                       <h4 style="padding: 0; margin: 5px;">Name:</h4>
-                                      <p style="padding: 5px; margin: 5px 0; background: #F4F4F4;">{{ form_data.name }}</p>
+                                      <p style="padding: 5px; margin: 5px 0; background: #F4F4F4;">{{ form_data.name|default('-') }}</p>
 
                                       <h4 style="padding: 0; margin: 5px;">Email:</h4>
                                       <p style="padding: 5px; margin: 5px 0; background: #F4F4F4;">{{ form_data.email }}</p>
@@ -241,7 +241,7 @@
                                       <p style="padding: 5px; margin: 5px 0; background: #F4F4F4;">{{ form_data.website|default('-') }}</p>
 
                                       <h4 style="padding: 0; margin: 5px;">Message:</h4>
-                                      <p style="padding: 5px; margin: 5px 0; background: #F4F4F4;">{{ form_data.message|nl2br }}</p>
+                                      <p style="padding: 5px; margin: 5px 0; background: #F4F4F4;">{{ form_data.message|default('-')|nl2br }}</p>
 
                                       <hr style="border: 1px solid #5A6991;">
 
