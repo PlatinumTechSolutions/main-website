@@ -2,17 +2,49 @@
 
 namespace App\Controller;
 
-use Symfony\Component\HttpFoundation\Response;
+use Swift_Mailer;
+use Swift_Message;
+use App\Form\ContactType;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class ContactController extends Controller
+class ContactController extends AbstractController
 {
-    /**
-     *@Route("/contact", name="contact")
-     */
-    public function index()
+    public function __construct($recipient)
     {
-        return $this->render('contact.html.twig');
+        $this->recipient = $recipient;
+    }
+
+    /**
+     * @Route("/contact", name="contact")
+     */
+    public function index(Request $request, Swift_Mailer $mailer)
+    {
+        $form = $this->createForm(ContactType::class, null, [
+            'action' => $this->generateUrl('contact'),
+        ]);
+
+        $form->handleRequest($request);
+
+        if ($success = ($form->isSubmitted() && $form->isValid())) {
+            $contactFormData = $form->getData();
+
+            $body = $this->renderView('emails/contact.html.twig', [
+                'form_data' => $contactFormData,
+            ]);
+
+            $message = (new Swift_Message(date('l jS \of F Y h:i:s A')))
+                ->setFrom(['no-reply@platinumtechsolutions.co.uk' => "Platinum Tech Solutions"])
+                ->setTo($this->recipient)
+                ->setBody($body, 'text/html');
+
+            $mailer->send($message);
+        }
+
+        return $this->render('contact.html.twig', [
+            'contact_form' => $form->createView(),
+            'success' => $success,
+        ]);
     }
 }

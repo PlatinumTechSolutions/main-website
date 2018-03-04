@@ -9,7 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class HomepageController extends Controller
 {
     /**
-     *@Route("/", name="homepage")
+     * @Route("/", name="homepage")
      */
     public function index()
     {

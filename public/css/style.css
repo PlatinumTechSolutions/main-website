@@ -39,6 +39,10 @@ body {
   font-weight: bold;
 }
 
+nav.sticky-top {
+  border-bottom: 1px solid #5A6991;
+}
+
 .content-header {
   color: #FFFFFF;
   text-align: center;

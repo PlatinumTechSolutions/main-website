@@ -9,7 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class ServicesController extends Controller
 {
     /**
-     *@Route("/services", name="services")
+     * @Route("/services", name="services")
      */
     public function index()
     {
@@ -17,7 +17,7 @@ class ServicesController extends Controller
     }
 
     /**
-     *@Route("/services/build", name="services_build")
+     * @Route("/services/build", name="services_build")
      */
     public function build()
     {
@@ -25,7 +25,7 @@ class ServicesController extends Controller
     }
 
     /**
-     *@Route("/services/devops", name="services_devops")
+     * @Route("/services/devops", name="services_devops")
      */
     public function devops()
     {
@@ -33,7 +33,7 @@ class ServicesController extends Controller
     }
 
     /**
-     *@Route("/services/design", name="services_design")
+     * @Route("/services/design", name="services_design")
      */
     public function design()
     {
@@ -41,7 +41,7 @@ class ServicesController extends Controller
     }
 
     /**
-     *@Route("/services/security", name="services_security")
+     * @Route("/services/security", name="services_security")
      */
     public function security()
     {
@@ -49,7 +49,7 @@ class ServicesController extends Controller
     }
 
     /**
-     *@Route("/services/testing", name="services_testing")
+     * @Route("/services/testing", name="services_testing")
      */
     public function testing()
     {
