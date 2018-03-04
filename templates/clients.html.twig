@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<section class="content-header">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-center">Clients</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content">
+  <div class="container clients">
+
+    <div class="row">
+      <div class="col">
+        <h3 class="text-center">Some of our previous clients</h3>
+        <p>Below are just some of the clients we’ve worked with over the years. One of the things we like most about our business is the sheer
+        diversity of clients and industries we get to work with.</p>
+      </div>
+    </div>
+
+    {% for client in clients %}
+
+    <div class="row client client-{{ client.class }}">
+      <div class="col">
+        <div class="row">
+
+          <div class="col-lg-6 order-lg-{% if loop.index0 % 2 == 0 %}last{% else %}first{% endif %} client-logo">
+            <div class="text-center">
+              <img src="/img/clients/{{ client.logo }}" alt="{{ client.name }}" />
+            </div>
+            <div class="tags">
+              {% for tag in client.tags %}
+                <span class="badge badge-info badge-pill">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          </div>
+
+          <div class="col-lg-6 services">
+            <h4>Services provided</h4>
+            <ul>
+            {% for task in client.tasks %}
+              <li>{{ task }}</li>
+            {% endfor %}
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    {% endfor %}
+
+  </div>
+</section>
+
+{% endblock %}

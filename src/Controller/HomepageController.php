@@ -17,37 +17,4 @@ class HomepageController extends Controller
           'clients' => $this->getPastClients(),
         ]);
     }
-
-    /**
-     * @return array
-     */
-    private function getPastClients()
-    {
-        return [
-            [
-                'name' => 'New Scientist',
-                'logo' => 'NewScientist.png',
-            ],
-            [
-                'name' => 'Squawka',
-                'logo' => 'Squawka.png',
-            ],
-            [
-                'name' => 'Voucher Codes',
-                'logo' => 'VoucherCodes.png',
-            ],
-            [
-                'name' => 'Cognition X',
-                'logo' => 'CognitionX.png',
-            ],
-            [
-                'name' => 'Rightster',
-                'logo' => 'Rightster.png',
-            ],
-            [
-                'name' => 'IPC Meda',
-                'logo' => 'IPCMedia.png',
-            ],
-        ];
-    }
 }

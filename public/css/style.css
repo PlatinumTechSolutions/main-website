@@ -57,10 +57,6 @@ nav.sticky-top {
     font-size: 3rem;
   }
 
-.contact-form {
-  background: #EEE;
-}
-
 .footer-contact {
   background-color: #5A6991;
   color: #FFFFFF;
@@ -123,25 +119,6 @@ nav.sticky-top {
     color: #ccc;
   }
 
-.clients {
-  overflow-x: hidden;
-  white-space: nowrap;
-}
-  .clients .client {
-    display: inline-block;
-
-    width: 160px;
-    height: 80px;
-    margin: 10px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .past-clients .client span {
-    display: none;
-  }
-
 .social-links a {
   color: #999;
   font-size: 40px;
@@ -150,6 +127,38 @@ nav.sticky-top {
 
 .social-links a:hover {
   color: #5A6991;
+}
+
+/** /about **/
+
+/** /clients **/
+
+.clients {
+  margin-top: 10px;
+}
+  .clients .client {
+    margin: 40px;
+  }
+    .clients .client .services {
+      border-radius: 1rem;
+      background: #F4F4F4;
+      padding: 10px;
+    }
+
+.client-logo {
+}
+  .client-logo img {
+    width: 100%;
+    padding: 10px;
+  }
+  .client-logo .tags {
+    margin: 10px 0;
+  }
+
+/** /contact **/
+
+.contact-form {
+  background: #EEE;
 }
 
 .contact-form, .contact-sidebar {
