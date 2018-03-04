@@ -25,6 +25,8 @@
 
     {% for client in clients %}
 
+    {% if loop.index0 > 0 %}<hr>{% endif %}
+
     <div class="row client client-{{ client.class }}">
       <div class="col">
         <div class="row">
@@ -41,7 +43,7 @@
           </div>
 
           <div class="col-lg-6 services">
-            <h4>Services provided</h4>
+            <h4>Services provided to {{ client.name }}</h4>
             <ul>
             {% for task in client.tasks %}
               <li>{{ task }}</li>

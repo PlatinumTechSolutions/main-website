@@ -136,8 +136,13 @@ nav.sticky-top {
 .clients {
   margin-top: 10px;
 }
+  .clients hr {
+    background: #5A6991;
+    width: 80%;
+  }
   .clients .client {
-    margin: 40px;
+    margin: 20px;
+    padding: 20px;
   }
     .clients .client .services {
       border-radius: 1rem;
