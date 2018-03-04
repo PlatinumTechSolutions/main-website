@@ -7,7 +7,6 @@ use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TelType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\Extension\Core\Type\UrlType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -29,7 +28,7 @@ class ContactType extends AbstractType
         'label' => false,
         'required' => false,
       ])
-      ->add('website', UrlType::class, [
+      ->add('website', TextType::class, [
         'attr' => ['placeholder' => 'Website'],
         'label' => false,
         'required' => false,
