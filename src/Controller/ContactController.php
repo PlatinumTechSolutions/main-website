@@ -11,11 +11,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class ContactController extends AbstractController
 {
-    public function __construct($recipient)
-    {
-        $this->recipient = $recipient;
-    }
-
     /**
      * @Route("/contact", name="contact")
      */
@@ -36,7 +31,7 @@ class ContactController extends AbstractController
 
             $message = (new Swift_Message(date('l jS \of F Y h:i:s A')))
                 ->setFrom(['no-reply@platinumtechsolutions.co.uk' => "Platinum Tech Solutions"])
-                ->setTo($this->recipient)
+                ->setTo('contracts@platinumtechsolutions.co.uk')
                 ->setBody($body, 'text/html');
 
             $mailer->send($message);
