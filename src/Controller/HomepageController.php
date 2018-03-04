@@ -13,8 +13,6 @@ class HomepageController extends Controller
      */
     public function index()
     {
-        return $this->render('homepage.html.twig', [
-          'clients' => $this->getPastClients(),
-        ]);
+        return $this->render('homepage.html.twig');
     }
 }
