@@ -25,14 +25,12 @@ class ContactController extends AbstractController
         if ($success = ($form->isSubmitted() && $form->isValid())) {
             $contactFormData = $form->getData();
 
-            $body = $this->renderView('emails/contact.html.twig', [
-                'form_data' => $contactFormData,
-            ]);
-
             $message = (new Swift_Message(date('l jS \of F Y h:i:s A')))
                 ->setFrom(['no-reply@platinumtechsolutions.co.uk' => "Platinum Tech Solutions"])
                 ->setTo('contracts@platinumtechsolutions.co.uk')
-                ->setBody($body, 'text/html');
+                ->setBody($this->renderView('emails/contact.html.twig', [
+                    'form_data' => $contactFormData,
+                ]), 'text/html');
 
             $mailer->send($message);
         }
