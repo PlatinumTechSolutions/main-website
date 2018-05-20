@@ -6,18 +6,21 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
+/**
+ * @Route("/about")
+ */
 class AboutController extends Controller
 {
     /**
-     * @Route("/about", name="about")
+     * @Route("/", name="about")
      */
     public function index()
     {
-        return $this->render('services.html.twig');
+        return $this->render('about.html.twig');
     }
 
     /**
-     * @Route("/clients", name="about_clients")
+     * @Route("/clients/", name="about_clients")
      */
     public function clients()
     {
@@ -117,8 +120,16 @@ class AboutController extends Controller
             ],
         ];
 
-        return $this->render('clients.html.twig', [
+        return $this->render('about/clients.html.twig', [
             'clients' => $clients,
         ]);
+    }
+
+    /**
+     * @Route("/careers/", name="about_careers")
+     */
+    public function careers()
+    {
+        return $this->render('about/careers.html.twig');
     }
 }

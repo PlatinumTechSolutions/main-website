@@ -129,9 +129,17 @@ nav.sticky-top {
   color: #5A6991;
 }
 
-/** /about **/
+/** /about/ **/
 
-/** /clients **/
+.about {
+  margin-top: 10px;
+  min-height: 400px;
+}
+
+/** /about/careers/ **/
+
+
+/** /about/clients/ **/
 
 .clients {
   margin-top: 10px;
@@ -160,7 +168,7 @@ nav.sticky-top {
     margin: 10px 0;
   }
 
-/** /contact **/
+/** /contact/ **/
 
 .contact-form {
   background: #EEE;
@@ -168,4 +176,43 @@ nav.sticky-top {
 
 .contact-form, .contact-sidebar {
   padding: 10px;
+}
+
+/** back to top **/
+
+#back-to-top-button {
+  display: inline-block;
+  background-color: #CCC;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#back-to-top-button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#back-to-top-button:active {
+  background-color: #555;
+}
+#back-to-top-button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#back-to-top-button.show {
+  opacity: 1;
+  visibility: visible;
 }

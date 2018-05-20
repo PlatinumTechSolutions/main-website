@@ -41,13 +41,13 @@
             <a class="nav-link" href="{{ path('homepage') }}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="{{ path('projects') }}">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ path('services') }}">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="{{ path('about') }}">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ path('contact') }}">Contact</a>
@@ -55,6 +55,18 @@
         </ul>
       </div>
     </nav>
+
+{% block bodyHeader %}
+    <section class="content-header">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center">{% block bodyHeaderText %}{% endblock %}</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
 
 {% block body %}{% endblock %}
 
@@ -72,6 +84,8 @@
       </div>
     </section>
 {% endblock %}
+
+    <a id="back-to-top-button"></a>
 
     <footer class="footer">
       <div class="container">
@@ -94,13 +108,13 @@
             <div class="row">
               <div class="col-lg-4 col-md-6 products-column">
                 <nav>
-                  <h4><a href="#">Projects</a></h4>
+                  <h4><a href="{{ path('projects') }}">Projects</a></h4>
                   <ul class="menu">
-                    <li><a href="#">AWS</a></li>
-                    <li><a href="#">ElasticSearch</a></li>
-                    <li><a href="#">Symfony</a></li>
-                    <li><a href="#">Solr</a></li>
-                    <li><a href="#">WordPress</a></li>
+                    <li><a href="{{ path('projects_aws') }}">AWS</a></li>
+                    <li><a href="{{ path('projects_elastic_search') }}">ElasticSearch</a></li>
+                    <li><a href="{{ path('projects_gdpr') }}">GDPR</a></li>
+                    <li><a href="{{ path('projects_symfony') }}">Symfony</a></li>
+                    <li><a href="{{ path('projects_wordpress') }}">WordPress</a></li>
                   </ul>
                 </nav>
               </div>
@@ -109,8 +123,8 @@
                   <h4><a href="{{ path('services') }}">Services</a></h4>
                   <ul class="menu">
                     <li><a href="{{ path('services_build') }}">Build</a></li>
-                    <li><a href="{{ path('services_devops') }}">DevOps</a></li>
                     <li><a href="{{ path('services_design') }}">Design</a></li>
+                    <li><a href="{{ path('services_devops') }}">DevOps</a></li>
                     <li><a href="{{ path('services_security') }}">Security</a></li>
                     <li><a href="{{ path('services_testing') }}">Testing</a></li>
                   </ul>
@@ -118,13 +132,10 @@
               </div>
               <div class="col-lg-4 col-md-6 about-column">
                 <nav>
-                  <h4><a href="#">About</a></h4>
+                  <h4><a href="{{ path('about') }}">About</a></h4>
                   <ul class="menu">
-                    <li><a href="#">News</a></li>
+                    <li><a href="{{ path('about_careers') }}">Careers</a></li>
                     <li><a href="{{ path('about_clients') }}">Clients</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Legal</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
                   </ul>
                 </nav>
               </div>
@@ -147,9 +158,11 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="/js/main.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112067714-1"></script>

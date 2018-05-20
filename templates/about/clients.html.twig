@@ -1,16 +1,8 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
+{% block bodyHeaderText %}Clients{% endblock %}
 
-<section class="content-header">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1 class="text-center">Clients</h1>
-      </div>
-    </div>
-  </div>
-</section>
+{% block body %}
 
 <section class="content">
   <div class="container clients">
@@ -54,7 +46,6 @@
         </div>
       </div>
     </div>
-
 
     {% endfor %}
 

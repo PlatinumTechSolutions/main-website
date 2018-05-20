@@ -6,10 +6,14 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
+
+/**
+ * @Route("/services")
+ */
 class ServicesController extends Controller
 {
     /**
-     * @Route("/services", name="services")
+     * @Route("/", name="services")
      */
     public function index()
     {
@@ -17,42 +21,42 @@ class ServicesController extends Controller
     }
 
     /**
-     * @Route("/services/build", name="services_build")
+     * @Route("/build/", name="services_build")
      */
     public function build()
     {
-        return $this->render('services.html.twig');
+        return $this->render('services/build.html.twig');
     }
 
     /**
-     * @Route("/services/devops", name="services_devops")
+     * @Route("/devops/", name="services_devops")
      */
     public function devops()
     {
-        return $this->render('services.html.twig');
+        return $this->render('services/devops.html.twig');
     }
 
     /**
-     * @Route("/services/design", name="services_design")
+     * @Route("/design/", name="services_design")
      */
     public function design()
     {
-        return $this->render('services.html.twig');
+        return $this->render('services/design.html.twig');
     }
 
     /**
-     * @Route("/services/security", name="services_security")
+     * @Route("/security/", name="services_security")
      */
     public function security()
     {
-        return $this->render('services.html.twig');
+        return $this->render('services/security.html.twig');
     }
 
     /**
-     * @Route("/services/testing", name="services_testing")
+     * @Route("/testing/", name="services_testing")
      */
     public function testing()
     {
-        return $this->render('services.html.twig');
+        return $this->render('services/testing.html.twig');
     }
 }
