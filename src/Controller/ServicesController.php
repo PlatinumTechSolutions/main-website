@@ -15,9 +15,13 @@ class ServicesController extends Controller
     /**
      * @Route("/", name="services")
      */
-    public function index()
+    public function services()
     {
-        return $this->render('services.html.twig');
+        $services = [];
+        
+        return $this->render('services.html.twig', [
+            'services' => $services,
+        ]);
     }
 
     /**

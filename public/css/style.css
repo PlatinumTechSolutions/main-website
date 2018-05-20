@@ -178,6 +178,31 @@ nav.sticky-top {
   padding: 10px;
 }
 
+/** /projects/ **/
+
+.projects {
+
+}
+
+  .projects .row {
+    margin-bottom: 20px;
+  }
+    .projects .row .card {
+      margin-top: 20px;
+    }
+
+.project {
+}
+
+  .project .logo {
+    margin: 10px 0;
+    width: 400px;
+  }
+
+    .project .logo img {
+      width: 400px;
+    }
+
 /** back to top **/
 
 #back-to-top-button {

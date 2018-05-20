@@ -14,9 +14,44 @@ class ProjectsController extends Controller
     /**
      * @Route("/", name="projects")
      */
-    public function index()
+    public function projects()
     {
-        return $this->render('projects.html.twig');
+        $projects = [
+            [
+                'name' => 'AWS',
+                'logo' => 'awsLogo.png',
+                'desc' => '...',
+                'route' => 'projects_aws',
+            ],
+            [
+                'name' => 'ElasticSearch',
+                'logo' => 'elasticSearchLogo.png',
+                'desc' => '...',
+                'route' => 'projects_elastic_search',
+            ],
+            [
+                'name' => 'GDPR',
+                'logo' => 'gdprLogo.png',
+                'desc' => '...',
+                'route' => 'projects_gdpr',
+            ],
+            [
+                'name' => 'Symfony',
+                'logo' => 'symfonyLogo.png',
+                'desc' => '...',
+                'route' => 'projects_symfony',
+            ],
+            [
+                'name' => 'WordPress',
+                'logo' => 'wordpressLogo.png',
+                'desc' => '...',
+                'route' => 'projects_wordpress',
+            ],
+        ];
+
+        return $this->render('projects.html.twig', [
+            'projects' => $projects,
+        ]);
     }
 
     /**

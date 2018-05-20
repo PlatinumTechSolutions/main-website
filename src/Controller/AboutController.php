@@ -14,7 +14,7 @@ class AboutController extends Controller
     /**
      * @Route("/", name="about")
      */
-    public function index()
+    public function about()
     {
         return $this->render('about.html.twig');
     }

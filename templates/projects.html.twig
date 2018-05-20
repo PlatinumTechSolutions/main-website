@@ -5,11 +5,22 @@
 {% block body %}
 
 <section class="content">
-  <div class="container projects">
+  <div class="container projects projects-list">
     <div class="row">
-      <div class="col">
-
+      {% for project in projects %}
+      <div class="col-sm-6">
+        <a href="{{ path(project.route) }}">
+          <div class="card">
+            <div class="card-body text-center">
+              <div style="min-height: 90px;">
+                <img src="/img/projects/{{ project.logo }}" style="width: 200px;" />
+              </div>
+              <a href="{{ path(project.route) }}" class="btn btn-info">More</a>
+            </div>
+          </div>
+        </a>
       </div>
+      {% endfor %}
     </div>
   </div>
 </section>
