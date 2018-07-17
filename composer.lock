@@ -1585,16 +1585,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v4.0.3",
+            "version": "v4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "03fe5171e35966f43453e2e5c15d7fe65f7fb23b"
+                "reference": "4f9c7cf962e635b0b26b14500ac046e07dbef7f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/03fe5171e35966f43453e2e5c15d7fe65f7fb23b",
-                "reference": "03fe5171e35966f43453e2e5c15d7fe65f7fb23b",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/4f9c7cf962e635b0b26b14500ac046e07dbef7f3",
+                "reference": "4f9c7cf962e635b0b26b14500ac046e07dbef7f3",
                 "shasum": ""
             },
             "require": {
@@ -1602,12 +1602,13 @@
                 "symfony/polyfill-mbstring": "~1.1"
             },
             "require-dev": {
+                "predis/predis": "~1.0",
                 "symfony/expression-language": "~3.4|~4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -1634,7 +1635,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-03T17:15:19+00:00"
+            "time": "2018-06-19T21:38:16+00:00"
         },
         {
             "name": "symfony/http-kernel",
