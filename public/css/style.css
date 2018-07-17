@@ -158,6 +158,10 @@ nav.sticky-top {
 
 /** /about/careers/ **/
 
+.careers {
+  padding: 20px;
+  max-width: 940px;
+}
 
 /** /about/clients/ **/
 
