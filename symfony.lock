@@ -9,16 +9,19 @@
             "branch": "master",
             "version": "1.0",
             "ref": "cb4152ebcadbe620ea2261da1a1c5a9b8cea7672"
-        }
+        },
+        "files": [
+            "config/routes/annotations.yaml"
+        ]
     },
     "doctrine/cache": {
-        "version": "v1.7.1"
+        "version": "v1.8.0"
     },
     "doctrine/collections": {
-        "version": "v1.5.0"
+        "version": "v1.6.1"
     },
     "doctrine/common": {
-        "version": "v2.8.1"
+        "version": "v2.10.0"
     },
     "doctrine/event-manager": {
         "version": "v1.0.0"
@@ -41,6 +44,9 @@
     "monolog/monolog": {
         "version": "1.23.0"
     },
+    "nikic/php-parser": {
+        "version": "v4.2.1"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -54,13 +60,16 @@
         "version": "1.0.0"
     },
     "sensio/framework-extra-bundle": {
-        "version": "4.0",
+        "version": "5.2",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "master",
-            "version": "4.0",
-            "ref": "aaddfdf43cdecd4cf91f992052d76c2cadc04543"
-        }
+            "version": "5.2",
+            "ref": "fb7e19da7f013d0d422fa9bce16f5c510e27609b"
+        },
+        "files": [
+            "config/packages/sensio_framework_extra.yaml"
+        ]
     },
     "sensiolabs/security-checker": {
         "version": "4.0",
@@ -143,8 +152,14 @@
     "symfony/intl": {
         "version": "v4.0.4"
     },
-    "symfony/lts": {
-        "version": "4-dev"
+    "symfony/maker-bundle": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
+        }
     },
     "symfony/monolog-bridge": {
         "version": "v4.0.5"
@@ -171,13 +186,13 @@
         "version": "v1.6.0"
     },
     "symfony/polyfill-php72": {
-        "version": "v1.6.0"
+        "version": "v1.11.0"
     },
     "symfony/process": {
         "version": "v4.2.1"
     },
     "symfony/profiler-pack": {
-        "version": "v1.0.3"
+        "version": "v1.0.4"
     },
     "symfony/property-access": {
         "version": "v4.0.4"
@@ -192,7 +207,7 @@
         }
     },
     "symfony/stopwatch": {
-        "version": "v4.0.3"
+        "version": "v4.2.4"
     },
     "symfony/swiftmailer-bundle": {
         "version": "2.5",
@@ -216,7 +231,7 @@
         }
     },
     "symfony/var-dumper": {
-        "version": "v4.0.3"
+        "version": "v4.2.4"
     },
     "symfony/var-exporter": {
         "version": "v4.2.1"
@@ -228,7 +243,12 @@
             "branch": "master",
             "version": "3.3",
             "ref": "6bdfa1a95f6b2e677ab985cd1af2eae35d62e0f6"
-        }
+        },
+        "files": [
+            "config/packages/dev/web_profiler.yaml",
+            "config/packages/test/web_profiler.yaml",
+            "config/routes/dev/web_profiler.yaml"
+        ]
     },
     "symfony/web-server-bundle": {
         "version": "3.3",

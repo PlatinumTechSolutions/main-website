@@ -4,12 +4,12 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
  * @Route("/about")
  */
-class AboutController extends Controller
+class AboutController extends AbstractController
 {
     /**
      * @Route("/", name="about")

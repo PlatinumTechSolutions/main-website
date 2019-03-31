@@ -4,13 +4,12 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
  * @Route("/services")
  */
-class ServicesController extends Controller
+class ServicesController extends AbstractController
 {
     /**
      * @Route("/", name="services")
@@ -18,7 +17,7 @@ class ServicesController extends Controller
     public function services()
     {
         $services = [];
-        
+
         return $this->render('services.html.twig', [
             'services' => $services,
         ]);
