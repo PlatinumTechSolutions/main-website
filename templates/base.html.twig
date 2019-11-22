@@ -44,9 +44,6 @@
             <a class="nav-link" href="{{ path('projects') }}">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ path('services') }}">Services</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="{{ path('about') }}">About</a>
           </li>
           <li class="nav-item">
@@ -110,23 +107,23 @@
                 <nav>
                   <h4><a href="{{ path('projects') }}">Projects</a></h4>
                   <ul class="menu">
-                    <li><a href="{{ path('projects_aws') }}">AWS</a></li>
-                    <li><a href="{{ path('projects_elastic_search') }}">ElasticSearch</a></li>
-                    <li><a href="{{ path('projects_gdpr') }}">GDPR</a></li>
-                    <li><a href="{{ path('projects_symfony') }}">Symfony</a></li>
-                    <li><a href="{{ path('projects_wordpress') }}">WordPress</a></li>
+                    <li><a href="{{ path('projects') }}#AWS">AWS</a></li>
+                    <li><a href="{{ path('projects') }}#ElasticSearch">ElasticSearch</a></li>
+                    <li><a href="{{ path('projects') }}#GDPR">GDPR</a></li>
+                    <li><a href="{{ path('projects') }}#Symfony">Symfony</a></li>
+                    <li><a href="{{ path('projects') }}#WordPress">WordPress</a></li>
                   </ul>
                 </nav>
               </div>
               <div class="col-lg-4 col-md-6 services-column">
                 <nav>
-                  <h4><a href="{{ path('services') }}">Services</a></h4>
+                  <h4>Services</h4>
                   <ul class="menu">
-                    <li><a href="{{ path('services_build') }}">Build</a></li>
-                    <li><a href="{{ path('services_design') }}">Design</a></li>
-                    <li><a href="{{ path('services_devops') }}">DevOps</a></li>
-                    <li><a href="{{ path('services_security') }}">Security</a></li>
-                    <li><a href="{{ path('services_testing') }}">Testing</a></li>
+                    <li>Build</li>
+                    <li>Design</li>
+                    <li>DevOps</li>
+                    <li>Security</li>
+                    <li>Testing</li>
                   </ul>
                 </nav>
               </div>

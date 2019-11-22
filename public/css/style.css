@@ -152,8 +152,7 @@ nav.sticky-top {
 /** /about/ **/
 
 .about {
-  margin-top: 10px;
-  min-height: 400px;
+  padding: 20px;
 }
 
 /** /about/careers/ **/
@@ -205,15 +204,12 @@ nav.sticky-top {
 /** /projects/ **/
 
 .projects {
-
+  padding: 20px;
 }
 
   .projects .row {
     margin-bottom: 20px;
   }
-    .projects .row .card {
-      margin-top: 20px;
-    }
 
 .project {
 }
