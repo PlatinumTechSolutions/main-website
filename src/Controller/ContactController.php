@@ -21,6 +21,9 @@ class ContactController extends AbstractController
     {
         $form = $this->createForm(ContactType::class, null, [
             'action' => $this->generateUrl('contact'),
+            'attr' => [
+              'id' => 'contact-form',
+            ],
         ]);
 
         $form->handleRequest($request);

@@ -262,3 +262,9 @@ nav.sticky-top {
   opacity: 1;
   visibility: visible;
 }
+
+/** reCAPTCHA **/
+
+.grecaptcha-badge {
+  display:none;
+}
