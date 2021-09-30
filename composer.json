@@ -1,33 +1,33 @@
 {
     "type": "project",
     "license": "proprietary",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "require": {
-        "php": "^7.1.3",
+        "php": ">=7.2.5",
+        "ext-ctype": "*",
         "ext-iconv": "*",
-        "sensio/framework-extra-bundle": "^5.2",
-        "symfony/console": "^4.0",
-        "symfony/flex": "^1.2",
-        "symfony/form": "^4.0",
-        "symfony/framework-bundle": "^4.0",
-        "symfony/monolog-bundle": "^3.3",
-        "symfony/swiftmailer-bundle": "^3.2",
-        "symfony/twig-bundle": "^4.0",
-        "symfony/yaml": "^4.0"
-    },
-    "require-dev": {
-        "sensiolabs/security-checker": "^4.1",
-        "symfony/dotenv": "^4.0",
-        "symfony/maker-bundle": "^1.11",
-        "symfony/profiler-pack": "^1.0"
+        "doctrine/annotations": "^1.13",
+        "google/recaptcha": "^1.2",
+        "symfony/console": "5.3.*",
+        "symfony/dotenv": "5.3.*",
+        "symfony/flex": "^1.3.1",
+        "symfony/form": "5.3.*",
+        "symfony/framework-bundle": "5.3.*",
+        "symfony/mailer": "5.3.*",
+        "symfony/monolog-bundle": "^3.7",
+        "symfony/runtime": "5.3.*",
+        "symfony/twig-bundle": "5.3.*",
+        "symfony/yaml": "5.3.*",
+        "twig/extra-bundle": "^2.12|^3.0",
+        "twig/twig": "^2.12|^3.0"
     },
     "config": {
+        "optimize-autoloader": true,
         "preferred-install": {
             "*": "dist"
         },
-        "sort-packages": true,
-        "platform": {
-            "php": "7.2.13"
-        }
+        "sort-packages": true
     },
     "autoload": {
         "psr-4": {
@@ -40,15 +40,13 @@
         }
     },
     "replace": {
+        "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
-        "symfony/polyfill-php71": "*",
-        "symfony/polyfill-php70": "*",
-        "symfony/polyfill-php56": "*"
+        "symfony/polyfill-php72": "*"
     },
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [
@@ -63,8 +61,12 @@
     },
     "extra": {
         "symfony": {
-            "id": "01C36329BZAK4ZFK6VHZ4Z0SEV",
-            "allow-contrib": false
+            "allow-contrib": false,
+            "require": "5.3.*"
         }
+    },
+    "require-dev": {
+        "symfony/stopwatch": "5.3.*",
+        "symfony/web-profiler-bundle": "5.3.*"
     }
 }
