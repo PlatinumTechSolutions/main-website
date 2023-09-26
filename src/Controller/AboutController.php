@@ -6,22 +6,16 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-/**
- * @Route("/about")
- */
+#[Route('/about')]
 class AboutController extends AbstractController
 {
-    /**
-     * @Route("/", name="about")
-     */
+    #[Route('/about', name: 'about')]
     public function about()
     {
         return $this->render('about.html.twig');
     }
 
-    /**
-     * @Route("/clients/", name="about_clients")
-     */
+    #[Route('/clients', name: 'about_clients')]
     public function clients()
     {
         $clients = [
@@ -125,9 +119,7 @@ class AboutController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/careers/", name="about_careers")
-     */
+    #[Route('/careers', name: 'about_careers')]
     public function careers()
     {
         return $this->render('about/careers.html.twig');
