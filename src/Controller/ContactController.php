@@ -11,14 +11,10 @@ use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
- * @Route("/contact")
- */
+#[Route('/contact')]
 class ContactController extends AbstractController
 {
-    /**
-     * @Route("/", name="contact")
-     */
+    #[Route('/', name: 'contact')]
     public function contact(
         Request $request,
         MailerInterface $mailer
